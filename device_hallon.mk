@@ -43,7 +43,7 @@ PRODUCT_COPY_FILES += \
     device/semc/hallon/prebuilt/hw_config.sh:system/etc/hw_config.sh \
     device/semc/hallon/prebuilt/logo.rle:root/logo.rle \
     device/semc/hallon/prebuilt/bootrec:root/sbin/bootrec \
-    device/semc/hallon/recovery.fstab:root/etcrec/recovery.fstab 
+    device/semc/hallon/recovery.fstab:root/recovery.fstab 
 
 #recovery resources
 PRODUCT_COPY_FILES += \
