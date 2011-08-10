@@ -64,9 +64,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/semc/hallon/prebuilt/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     device/semc/hallon/prebuilt/hostapd.conf:system/etc/wifi/softap/hostapd.conf \
-    device/semc/hallon/modules/sdio.ko:system/lib/modules/sdio.ko \
-    device/semc/hallon/modules/tiap_drv.ko:system/lib/modules/tiap_drv.ko \
-    device/semc/hallon/modules/tiwlan_drv.ko:system/lib/modules/tiwlan_drv.ko
+    device/semc/hallon/modules/sdio.ko:root/modules/sdio.ko \
+    device/semc/hallon/modules/tiap_drv.ko:root/modules/tiap_drv.ko \
+    device/semc/hallon/modules/tiwlan_drv.ko:root/modules/tiwlan_drv.ko
 
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/lib/libril-qc-1.so \

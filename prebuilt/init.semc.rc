@@ -15,8 +15,7 @@ on boot
     chmod 0770 /data/misc/wifi
     chown wifi wifi /data/misc/wifi/wpa_supplicant.conf
     chmod 0666 /data/misc/wifi/wpa_supplicant.conf
-    # Copying hostapd.conf (WLAN HotSpot)
-    copy /system/etc/wifi/softap/hostapd.conf /data/misc/wifi/hostapd/hostapd.conf
+    exec /init.hostapd.sh
     chmod 0770 /data/misc/wifi/hostapd
     mkdir /data/misc/dhcp 0770 dhcp dhcp
     chown dhcp system /data/misc/dhcp
@@ -112,6 +111,7 @@ on boot
 #    # Create the directories and files expected by the lcatp service
 #    # only found in eng builds
 
+
 on property:init.svc.bluetoothd=running
     write /sys/devices/virtual/bluetooth/hci0/link_supervision_timeout 6400
 
@@ -162,9 +162,9 @@ service qmuxd /system/bin/qmuxd
 
 service akmd8975 /system/bin/akmd8975
 
-service hw_config /system/bin/sh /system/etc/hw_config.sh
-	user root
-	oneshot
+service hw_config /sbin/sh /system/etc/hw_config.sh
+    user root
+    oneshot
 
 service hdmid /system/bin/hdmid
     user  system
