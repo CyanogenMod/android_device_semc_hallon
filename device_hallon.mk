@@ -68,6 +68,9 @@ PRODUCT_COPY_FILES += \
     device/semc/hallon/modules/tiap_drv.ko:root/modules/tiap_drv.ko \
     device/semc/hallon/modules/tiwlan_drv.ko:root/modules/tiwlan_drv.ko
 
+# semc msm7x30 uses high-density artwork where available
+PRODUCT_LOCALES += hdpi
+
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/lib/libril-qc-1.so \
     rild.libargs=-d/dev/smd0 \
