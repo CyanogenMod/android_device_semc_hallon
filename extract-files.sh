@@ -54,6 +54,13 @@ adb pull /system/lib/libuim.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libril-qc-1.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libwms.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libwmsts.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libdsi_netctrl.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libdsutils.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libidl.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libnetmgr.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libqdp.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/bin/netmgrd ../../../vendor/$VENDOR/$DEVICE/proprietary
+
 
 ## Camera proprietaries
 adb pull /system/lib/liboemcamera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
@@ -66,8 +73,8 @@ adb pull /system/lib/libcald_pal.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libopencore_common.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 ## FIRMWARE
-adb pull /system/etc/firmware/bq27520_fw-0501_filever-0105_proj-hall_golden.bqfs ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/etc/firmware/bq27520_fw-0501_filever-0105_proj-hall_golden.dffs ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/bq27520_fw-0501_filever-0107_proj-hall_golden.bqfs ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/bq27520_fw-0501_filever-0107_proj-hall_golden.dffs ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/firmware/fm_rx_init_1273.1.bts ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/firmware/fm_rx_init_1273.2.bts ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/firmware/fm_tx_init_1273.1.bts ../../../vendor/$VENDOR/$DEVICE/proprietary
@@ -120,6 +127,9 @@ adb pull /system/lib/libmiscta.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 #Temporary GPS Fix untill we have 50001 gps
 adb pull /system/lib/hw/gps.msm7x30.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
+#Touch firmware
+adb pull /system/etc/firmware/touch_hallon_hitachi.hex ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/touch_hallon_sony.hex ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 ./setup-makefiles.sh
 
