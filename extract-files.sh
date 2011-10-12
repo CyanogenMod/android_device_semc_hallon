@@ -149,5 +149,11 @@ adb pull /system/lib/hw/gps.msm7x30.so ../../../vendor/$VENDOR/$DEVICE/proprieta
 adb pull /system/etc/firmware/touch_hallon_hitachi.hex ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/firmware/touch_hallon_sony.hex ../../../vendor/$VENDOR/$DEVICE/proprietary
 
+#ANT*
+adb pull /system/app/AntHalService.apk ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/permissions/com.dsi.ant.antradio_library.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/framework/com.dsi.ant.antradio_library.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libanthal.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+
 ./setup-makefiles.sh
 
