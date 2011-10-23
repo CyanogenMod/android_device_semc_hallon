@@ -30,6 +30,9 @@ adb pull /system/usr/keylayout/msm_pmic_pwr_key.kl ../../../vendor/$VENDOR/$DEVI
 adb pull /system/usr/keylayout/pm8058-keypad.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keylayout/qwerty.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keylayout/simple_remote.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keychars/us104-keyboard.kcm.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keylayout/us104-keyboard.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keylayout/usb_mouse.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 ## RIL related stuff 
 adb pull /system/lib/libril.so ../../../vendor/$VENDOR/$DEVICE/proprietary
@@ -69,14 +72,10 @@ adb pull /system/lib/libmmjpeg.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libmmipl.so ../../../vendor/$VENDOR/$DEVICE/proprietary 
 adb pull /system/lib/libcamera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libcamera_clientsemc.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/libopencore_common.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/libcald_api.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libcald_client.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libcald_debugger.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libcald_hal.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libcald_imageutil.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/libcald_omxcamera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/libcald_omxcamera_plugin.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libcald_pal.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libcald_server.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libface.so ../../../vendor/$VENDOR/$DEVICE/proprietary
@@ -97,8 +96,8 @@ adb pull /system/usr/semc/camera/SOD08BN1_DW9714.dat ../../../vendor/$VENDOR/$DE
 adb pull /system/usr/semc/camera/SOD08BN1_IMX105.dat ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 ## FIRMWARE
-adb pull /system/etc/firmware/bq27520_fw-0501_filever-0107_proj-hall_golden.bqfs ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/etc/firmware/bq27520_fw-0501_filever-0107_proj-hall_golden.dffs ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/bq27520_fw-0506_filever-0111_proj-hall_golden.bqfs ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/bq27520_fw-0506_filever-0111_proj-hall_golden.dffs ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/firmware/fm_rx_init_1273.1.bts ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/firmware/fm_rx_init_1273.2.bts ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/firmware/fm_tx_init_1273.1.bts ../../../vendor/$VENDOR/$DEVICE/proprietary
@@ -148,6 +147,20 @@ adb pull /system/lib/hw/gps.msm7x30.so ../../../vendor/$VENDOR/$DEVICE/proprieta
 #Touch firmware
 adb pull /system/etc/firmware/touch_hallon_hitachi.hex ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/firmware/touch_hallon_sony.hex ../../../vendor/$VENDOR/$DEVICE/proprietary
+
+## Adreno 200 files
+adb pull /system/lib/libgsl.so ../../../vendor/$VENDOR/$DEVICE/proprietary/libgsl.so
+adb pull /system/lib/egl/libGLESv1_CM_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/egl/libq3dtools_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/egl/libEGL_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/egl/libGLESv2_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+
+#HDMI
+adb pull /system/bin/hdmid ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libhdmidisplay.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/app/SemcHdmiControlService.apk ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/framework/com.sonyericsson.privateapis_impl.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/permissions/com.sonyericsson.privateapis.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 #ANT*
 adb pull /system/app/AntHalService.apk ../../../vendor/$VENDOR/$DEVICE/proprietary
