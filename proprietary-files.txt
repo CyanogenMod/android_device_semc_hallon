@@ -63,6 +63,11 @@ lib/libcameralight.so
 usr/semc/camera/APT00YP0.dat
 usr/semc/camera/APT00YP0_MT9V144.dat
 usr/semc/camera/LGI08BN0.dat
+usr/semc/camera/LGI08BN0_DW9714.dat
+usr/semc/camera/LGI08BN0_IMX073.dat
+usr/semc/camera/LGI08BN1.dat
+usr/semc/camera/LGI08BN1_DW9714.dat
+usr/semc/camera/LGI08BN1_IMX073.dat
 usr/semc/camera/LM3560_01_flash.dat
 usr/semc/camera/SOD08BN0.dat
 usr/semc/camera/SOD08BN0_DW9714.dat
@@ -72,7 +77,7 @@ usr/semc/camera/SOD08BN1_DW9714.dat
 usr/semc/camera/SOD08BN1_IMX105.dat
 
 ## FIRMWARE
-etc/firmware/bq27520_fw-0507_filever-0112_proj-hall_golden.bqfs
+etc/firmware/bq27520_fw-0506_filever-0111_proj-hall_golden.bqfs
 etc/firmware/fm_rx_init_1273.1.bts
 etc/firmware/fm_rx_init_1273.2.bts
 etc/firmware/fm_tx_init_1273.1.bts
