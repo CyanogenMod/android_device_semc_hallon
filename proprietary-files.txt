@@ -64,10 +64,10 @@ usr/semc/camera/APT00YP0.dat
 usr/semc/camera/APT00YP0_MT9V144.dat
 usr/semc/camera/LGI08BN0.dat
 usr/semc/camera/LGI08BN0_DW9714.dat
-usr/semc/camera/LGI08BN0_IMX073.dat
+usr/semc/camera/LGI08BN0_IMX105.dat
 usr/semc/camera/LGI08BN1.dat
 usr/semc/camera/LGI08BN1_DW9714.dat
-usr/semc/camera/LGI08BN1_IMX073.dat
+usr/semc/camera/LGI08BN1_IMX105.dat
 usr/semc/camera/LM3560_01_flash.dat
 usr/semc/camera/SOD08BN0.dat
 usr/semc/camera/SOD08BN0_DW9714.dat
