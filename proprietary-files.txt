@@ -1,4 +1,5 @@
 # Prebuilt kl keymaps
+usr/idc/cy8ctma300_touch.idc
 usr/keychars/qwerty.kcm.bin
 usr/keylayout/atdaemon.kl
 usr/keylayout/AVRCP.kl
@@ -10,7 +11,7 @@ usr/keychars/us104-keyboard.kcm.bin
 usr/keylayout/us104-keyboard.kl
 usr/keylayout/usb_mouse.kl
 
-## RIL related stuff 
+## RIL related stuff
 lib/libril.so
 bin/port-bridge
 bin/qmuxd
@@ -30,7 +31,6 @@ lib/libpbmlib.so
 lib/libqmi.so
 lib/libqueue.so
 lib/libuim.so
-lib/libreference-ril.so
 lib/libril-qc-1.so
 lib/libwms.so
 lib/libwmsts.so
@@ -40,7 +40,6 @@ lib/libidl.so
 lib/libnetmgr.so
 lib/libqdp.so
 bin/netmgrd
-
 
 ## Camera proprietaries
 etc/permissions/android.hardware.camera.front.xml
@@ -97,15 +96,8 @@ etc/firmware/vidc_720p_vc1_dec_mc.fw
 etc/firmware/yamato_pfp.fw
 etc/firmware/yamato_pm4.fw
 
-
 ## WIFI & BT TI1271
-bin/nvimport
-bin/hciattach
 etc/init.qcom.bt.sh
-etc/wifi/tiwlan.ini
-etc/wifi/tiwlan_firmware.bin
-etc/wifi/softap/tiwlan_ap.ini
-etc/wifi/softap/tiwlan_firmware_ap.bin
 
 ## Other libraries and proprietary binaries
 lib/libaudioalsa.so
@@ -113,32 +105,23 @@ etc/vold.fstab
 etc/sensors.conf
 lib/hw/sensors.default.so
 bin/bq275xx_fwloader
-bin/hdmid
 bin/akmd8975
 bin/touchd
 bin/chargemon
 lib/libmiscta.so
 
-#Touch firmware
-etc/firmware/touch_hallon_hitachi.hex
-etc/firmware/touch_hallon_sony.hex
-
 ## Adreno 200 files
+lib/libC2D2.so
+lib/libOpenVG.so
 lib/libgsl.so
+lib/libsc-a2xx.so
+lib/egl/eglsubAndroid.so
 lib/egl/libGLESv1_CM_adreno200.so
 lib/egl/libq3dtools_adreno200.so
 lib/egl/libEGL_adreno200.so
 lib/egl/libGLESv2_adreno200.so
 
-#HDMI
-bin/hdmid
-lib/libhdmidisplay.so
-app/SemcHdmiControlService.apk
-framework/com.sonyericsson.privateapis_impl.jar
-etc/permissions/com.sonyericsson.privateapis.xml
+#Touch firmware
+etc/firmware/touch_hallon_hitachi.hex
+etc/firmware/touch_hallon_sony.hex
 
-#ANT*
-app/AntHalService.apk
-etc/permissions/com.dsi.ant.antradio_library.xml
-framework/com.dsi.ant.antradio_library.jar
-lib/libanthal.so
