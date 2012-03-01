@@ -10,7 +10,7 @@ usr/keychars/us104-keyboard.kcm.bin
 usr/keylayout/us104-keyboard.kl
 usr/keylayout/usb_mouse.kl
 
-## RIL related stuff
+## RIL related stuff 
 lib/libril.so
 bin/port-bridge
 bin/qmuxd
@@ -30,6 +30,7 @@ lib/libpbmlib.so
 lib/libqmi.so
 lib/libqueue.so
 lib/libuim.so
+lib/libreference-ril.so
 lib/libril-qc-1.so
 lib/libwms.so
 lib/libwmsts.so
@@ -40,11 +41,12 @@ lib/libnetmgr.so
 lib/libqdp.so
 bin/netmgrd
 
+
 ## Camera proprietaries
 etc/permissions/android.hardware.camera.front.xml
 lib/liboemcamera.so
 lib/libmmjpeg.so
-lib/libmmipl.so
+lib/libmmipl.so 
 lib/libcamera.so
 lib/libcamera_clientsemc.so
 lib/libcald_client.so
@@ -108,7 +110,6 @@ etc/wifi/softap/tiwlan_firmware_ap.bin
 lib/libaudioalsa.so
 etc/vold.fstab
 etc/sensors.conf
-lib/hw/sensors.default.so
 bin/bq275xx_fwloader
 bin/hdmid
 bin/akmd8975
