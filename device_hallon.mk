@@ -29,7 +29,7 @@ DEVICE_PACKAGE_OVERLAYS += device/semc/hallon/overlay
 # Init files
 PRODUCT_COPY_FILES += \
     device/semc/hallon/prebuilt/init.semc.usb.rc:root/init.semc.usb.rc \
-    device/semc/hallon/prebuilt/bootrec:root/sbin/bootrec \
+    device/semc/hallon/prebuilt/bootrec-device:root/sbin/bootrec-device \
     device/semc/hallon/prebuilt/hw_config.sh:system/etc/hw_config.sh \
     device/semc/hallon/prebuilt/pre_hw_config.sh:root/pre_hw_config.sh \
     device/semc/msm7x30-common/prebuilt/logo_H.rle:root/logo.rle \
