@@ -110,7 +110,6 @@ lib/libaudioalsa.so
 etc/vold.fstab
 etc/sensors.conf
 bin/bq275xx_fwloader
-bin/hdmid
 bin/akmd8975
 bin/touchd
 bin/chargemon
@@ -126,13 +125,6 @@ lib/egl/libGLESv1_CM_adreno200.so
 lib/egl/libq3dtools_adreno200.so
 lib/egl/libEGL_adreno200.so
 lib/egl/libGLESv2_adreno200.so
-
-#HDMI
-bin/hdmid
-lib/libhdmidisplay.so
-app/SemcHdmiControlService.apk
-framework/com.sonyericsson.privateapis_impl.jar
-etc/permissions/com.sonyericsson.privateapis.xml
 
 #ANT+
 lib/libanthal.so
