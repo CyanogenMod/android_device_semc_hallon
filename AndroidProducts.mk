@@ -26,4 +26,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_hallon.mk
+    $(LOCAL_DIR)/full_hallon.mk
