@@ -20,9 +20,11 @@ PRODUCT_COPY_FILES += \
     device/semc/hallon/prebuilt/init.semc.usb.rc:root/init.semc.usb.rc \
     device/semc/hallon/prebuilt/pre_hw_config.sh:root/pre_hw_config.sh \
     device/semc/hallon/prebuilt/hw_config.sh:system/etc/hw_config.sh \
-    device/semc/msm7x30-common/prebuilt/logo_H.rle:root/logo.rle \
-    device/semc/hallon/prebuilt/bootrec-device:root/sbin/bootrec-device \
-    device/semc/hallon/recovery.fstab:root/recovery.fstab
+    device/semc/msm7x30-common/prebuilt/logo_H.rle:root/logo.rle
+
+# Device specific part for two-stage boot
+PRODUCT_COPY_FILES += \
+    device/semc/hallon/recovery/bootrec-device:recovery/bootrec-device
 
 # Device specific configs
 PRODUCT_COPY_FILES += \
