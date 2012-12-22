@@ -3,7 +3,6 @@
 
 TARGET_KERNEL_SOURCE := kernel/semc/msm7x30
 TARGET_KERNEL_CONFIG := cyanogen_hallon_defconfig
-#TARGET_PREBUILT_KERNEL := device/semc/hallon/prebuilt/kernel
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 
 TARGET_RECOVERY_INITRC := device/semc/hallon/recovery/init.rc
@@ -17,4 +16,3 @@ SENSORS_PRESSURE_BMP180 := false
 TARGET_QCOM_HDMI_OUT := false
 
 TARGET_OTA_ASSERT_DEVICE := MT15i,MT15a,hallon
-
